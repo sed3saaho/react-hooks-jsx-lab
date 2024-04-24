@@ -38,6 +38,7 @@ test("renders a <img> element with the correct attributes", () => {
   render(<About />);
 
   // Find an element with the "alt" attribute set to "I made this"
+  
   const img = screen.queryByAltText("I made this");
 
   expect(img).toBeInTheDocument();
